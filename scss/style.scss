@@ -2,6 +2,7 @@
 @use "base";
 @use "utlis";
 @use "animation";
+@use "media-queries";
 @use "classes";
 
 .grid-container {
@@ -11,7 +12,16 @@
     "aside main" 1fr
     "footer footer" auto
     / 350px auto;
-  min-height: 100vh;
+
+  @include media-queries.xs {
+    grid:
+    "header" auto
+    "main" auto
+    "picture" auto
+    "aside" auto
+    "footer" auto
+    / auto;
+  }
 }
 
 header {
@@ -25,11 +35,19 @@ header {
   justify-content: center;
   align-items: center;
 
+  @include media-queries.xs {
+    padding: 5rem 2rem;
+  }
+
   h1 {
     font-size: 6rem;
     line-height: 8rem;
     font-weight: 300;
     letter-spacing: 3rem;
+
+    @include media-queries.xs {
+      font-size: 4rem;
+    }
   }
 
   p {
@@ -148,6 +166,10 @@ main {
   grid-area: main;
   padding: 5rem;
 
+  @include media-queries.xs {
+    padding: 5rem 1.5rem;
+  }
+
   h2 {
     margin-bottom: 4rem;
   }
@@ -203,6 +225,10 @@ footer {
   padding: 5rem;
   background: var(--text);
 
+  @include media-queries.xs {
+    padding: 5rem 1.5rem;
+  }
+
   h2 {
     margin-bottom: 3rem;
   }
@@ -246,6 +272,10 @@ footer {
       min-width: 400px;
       padding: 1rem 2rem;
       line-height: 2rem;
+
+      @include media-queries.xs {
+        min-width: 200px;
+      }
 
       &::placeholder {
         color: var(--text);
