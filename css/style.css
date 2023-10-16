@@ -163,16 +163,16 @@ aside .block .bar-skill .bar-skill-progress {
   top: 0;
   left: 0;
   width: 80%;
-  background: var(--light);
+  background: var(--primary);
 }
 aside .block .bar-skill .bar-skill-dot {
   position: absolute;
   height: 10px;
   width: 10px;
-  background: var(--dark);
+  background: var(--primary);
   left: calc(80% + 35px);
   top: -2.5px;
-  transform: rotate(45deg);
+  border-radius: 50%;
 }
 aside .block .stars-container {
   display: flex;
@@ -226,16 +226,26 @@ main p {
   letter-spacing: 0.1rem;
   line-height: 3rem;
 }
+main .formationNameDate {
+  margin-bottom: 5rem;
+}
 main .formationNameDate .content h3 {
   font-weight: 900;
   margin: 0 0;
 }
 main .formationNameDate .content p {
+  font-size: 1.6rem;
   margin: 0 0;
 }
 main .formationNameDate .content p:last-child {
-  font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+}
+main .formationNameDate .content ul {
+  margin: 2rem 0;
+  list-style: circle;
+  padding-left: 4rem;
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
 }
 main .experience {
   display: flex;
@@ -263,6 +273,8 @@ main .experience .content ul {
   margin: 2rem 0;
   list-style: circle;
   padding-left: 4rem;
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
 }
 
 footer {
@@ -287,6 +299,10 @@ footer h2 {
 footer a {
   color: white;
   text-decoration: underline;
+  transition: all 0.2s;
+}
+footer a:hover {
+  opacity: 0.7;
 }
 
 /*# sourceMappingURL=style.css.map */
