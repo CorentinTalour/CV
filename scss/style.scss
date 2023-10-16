@@ -145,7 +145,6 @@ aside {
           transform: scale(1.2);
           transition: all 0.2s;
         }
-
       }
 
       i {
@@ -154,7 +153,7 @@ aside {
         margin-right: 1rem;
       }
 
-      p {
+      a {
         flex: auto;
         margin: 0;
       }
@@ -177,6 +176,26 @@ main {
   p {
     letter-spacing: 0.1rem;
     line-height: 3rem;
+  }
+
+  .formationNameDate {
+
+    .content {
+      h3 {
+        font-weight: 900;
+        margin: 0 0;
+      }
+
+      p {
+        margin: 0 0;
+      }
+
+      p:last-child {
+        font-weight: 300;
+        font-size: 1.5rem;
+      }
+    }
+
   }
 
   .experience {
@@ -233,53 +252,8 @@ footer {
     margin-bottom: 3rem;
   }
 
-  form {
-    display: flex;
-    align-items: center;
-
-    .prefix {
-      background: linear-gradient(to right, var(--dark), var(--light));
-      padding: 1rem 2rem;
-      color: white;
-      font-size: 2rem;
-      border-top-left-radius: 0.5rem;
-      border-bottom-left-radius: 0.5rem;
-    }
-
-    button {
-      background: var(--text);
-      border: 0;
-      cursor: pointer;
-      transition: all 0.2s;
-
-      &:hover {
-        opacity: 0.8;
-      }
-
-      .postfix {
-        background: linear-gradient(to right, var(--dark), var(--light));
-        padding: 1rem 2rem;
-        color: white;
-        font-size: 2rem;
-        border-top-right-radius: 0.5rem;
-        border-bottom-right-radius: 0.5rem;
-      }
-    }
-
-    input {
-      outline: 0;
-      border: 0;
-      min-width: 400px;
-      padding: 1rem 2rem;
-      line-height: 2rem;
-
-      @include media-queries.xs {
-        min-width: 200px;
-      }
-
-      &::placeholder {
-        color: var(--text);
-      }
-    }
+  a {
+    color: white;
+    text-decoration: underline;
   }
 }

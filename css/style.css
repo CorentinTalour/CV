@@ -74,6 +74,9 @@ img {
 .text-hint {
   color: var(--hint);
 }
+.text-bold {
+  font-weight: bold;
+}
 
 .grid-container {
   display: grid;
@@ -202,7 +205,7 @@ aside .block .social-container i {
   flex: 0 0 50px;
   margin-right: 1rem;
 }
-aside .block .social-container p {
+aside .block .social-container a {
   flex: auto;
   margin: 0;
 }
@@ -222,6 +225,17 @@ main h2 {
 main p {
   letter-spacing: 0.1rem;
   line-height: 3rem;
+}
+main .formationNameDate .content h3 {
+  font-weight: 900;
+  margin: 0 0;
+}
+main .formationNameDate .content p {
+  margin: 0 0;
+}
+main .formationNameDate .content p:last-child {
+  font-weight: 300;
+  font-size: 1.5rem;
 }
 main .experience {
   display: flex;
@@ -270,49 +284,9 @@ footer {
 footer h2 {
   margin-bottom: 3rem;
 }
-footer form {
-  display: flex;
-  align-items: center;
-}
-footer form .prefix {
-  background: linear-gradient(to right, var(--dark), var(--light));
-  padding: 1rem 2rem;
+footer a {
   color: white;
-  font-size: 2rem;
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-}
-footer form button {
-  background: var(--text);
-  border: 0;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-footer form button:hover {
-  opacity: 0.8;
-}
-footer form button .postfix {
-  background: linear-gradient(to right, var(--dark), var(--light));
-  padding: 1rem 2rem;
-  color: white;
-  font-size: 2rem;
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-}
-footer form input {
-  outline: 0;
-  border: 0;
-  min-width: 400px;
-  padding: 1rem 2rem;
-  line-height: 2rem;
-}
-@media (max-width: 480px) {
-  footer form input {
-    min-width: 200px;
-  }
-}
-footer form input::placeholder {
-  color: var(--text);
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
