@@ -55,9 +55,12 @@ header {
     letter-spacing: 0.5rem;
   }
 
-  span {
-    display: inline-block;
-    animation: bounce 2s;
+  .slide-right {
+    animation: slide-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  .slide-left {
+    animation: slide-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
 }
 
