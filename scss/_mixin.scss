@@ -1,0 +1,8 @@
+@mixin bar-skill-progress($pourcentage) {
+  position: absolute;
+  height: 5px;
+  top: 0;
+  left: 0;
+  width: $pourcentage;
+  background: var(--primary);
+}
