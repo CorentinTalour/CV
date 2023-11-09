@@ -22,6 +22,26 @@
       "footer" auto
       / auto;
   }
+
+  @include sm {
+    grid:
+      "header" auto
+      "main" auto
+      "picture" auto
+      "aside" auto
+      "footer" auto
+      / auto;
+  }
+
+  @include md {
+    grid:
+      "header" auto
+      "main" auto
+      "picture" auto
+      "aside" auto
+      "footer" auto
+      / auto;
+  }
 }
 
 header {
@@ -39,6 +59,14 @@ header {
     padding: 5rem 2rem;
   }
 
+  @include sm {
+    padding: 5rem 2rem;
+  }
+
+  @include md {
+    padding: 5rem 2rem;
+  }
+
   h1 {
     font-size: 6rem;
     line-height: 8rem;
@@ -48,6 +76,11 @@ header {
     @include xs {
       font-size: 4rem;
     }
+
+    @include sm {
+      font-size: 4rem;
+    }
+
   }
 
   p {
@@ -148,6 +181,14 @@ main {
     padding: 5rem 1.5rem;
   }
 
+  @include sm {
+    padding: 5rem 1.5rem;
+  }
+
+  @include md {
+    padding: 5rem 3rem;
+  }
+
   h2 {
     margin-bottom: 4rem;
   }
@@ -239,6 +280,10 @@ footer {
   background: var(--text);
 
   @include xs {
+    padding: 5rem 1.5rem;
+  }
+
+  @include sm {
     padding: 5rem 1.5rem;
   }
 
