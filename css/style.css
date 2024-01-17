@@ -71,6 +71,10 @@ i {
   margin-top: 1rem !important;
 }
 
+.mr-1 {
+  margin-right: 1rem;
+}
+
 @keyframes slide-right {
   0% {
     transform: translateY(-100px);
